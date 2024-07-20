@@ -1,5 +1,4 @@
 // 0-constants.js
-
 // Modifica taskFirst para usar const
 export function taskFirst() {
     const task = 'I prefer const when I can.';
