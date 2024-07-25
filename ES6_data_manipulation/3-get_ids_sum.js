@@ -1,9 +1,7 @@
-import { getListStudents } from './0-get_list_students.js';
-import { getStudentIdsSum } from './3-get_ids_sum.js';
+export default function getStudentsIdSum(studentL) {
+  if (!Array.isArray(studentL)) {
+    return 0;
+  }
 
-test("getStudentIdsSum is implemented correctly", () => {
-  const students = getListStudents();
-  const value = getStudentIdsSum(students);
-
-  expect(value).toEqual(8);
-});
+  return studentL.reduce((sum, student) => sum + student.id, 0);
+}
