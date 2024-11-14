@@ -1,13 +1,15 @@
 // 0-constants.js
 
 export function taskFirst() {
-  const task = 'I prefer const when I can.';
+  const part1 = 'I prefer const';
+  const part2 = ' when I can.';
+  const task = `${part1}${part2}`;
   return task;
 }
 
-export const getLast = () => {
+export function getLast() {
   return ' is okay';
-};
+}
 
 export function taskNext() {
   let combination = 'But sometimes let';
