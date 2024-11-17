@@ -8,10 +8,6 @@ export default class Currency {
     return `${this.name} (${this.code})`;
   }
 
-  get name() {
-    return this._name;
-  }
-
   get code() {
     return this._code;
   }
@@ -21,6 +17,10 @@ export default class Currency {
       throw TypeError('code must be a string');
     }
     this._code = code;
+  }
+
+  get name() {
+    return this._name;
   }
 
   set name(name) {
