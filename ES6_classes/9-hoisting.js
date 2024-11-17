@@ -4,7 +4,7 @@ export class HolbertonClass {
     this._location = location;
   }
 
-    get year() {
+  get year() {
     return this._year;
   }
 
