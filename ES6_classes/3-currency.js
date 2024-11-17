@@ -4,8 +4,7 @@ export default class Currency {
     this.name = name;
   }
 
-  displayFullCurrency() 
-  {
+  displayFullCurrency() {
     return `${this.name} (${this.code})`
   }
 
